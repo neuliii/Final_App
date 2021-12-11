@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="90dp"
+        android:background="#aaffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/viewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:onClick="onButtonClicked"
+            android:text="CHANGE" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/coo1" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:srcCompat="@drawable/coo2" />
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="메뉴 화면"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coogie(쿠기)"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="'밀리언 마켓' 소속 아티스트이다."
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="80dp"
+        android:textStyle="italic"
+        android:textSize="15sp"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>
